@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- clip to keep chameleon eye fused reticle contained -->
+    <clipPath id="eyeClip">
+      <path d="M128 48 C172 48 208 84 208 128 C208 172 172 208 128 208 C84 208 48 172 48 128 C48 84 84 48 128 48 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="256" height="256" fill="#0b0f0a"/>
+
+  <!-- Outer reptilian camo accent: angular shards around the eye -->
+  <polygon points="128,20 146,44 160,32 168,58 186,52 182,76 204,82 190,102 210,118 186,128 204,146 182,152 186,174 160,168 146,192 128,172 112,192 98,168 74,176 78,152 54,146 72,128 48,118 68,102 54,82 76,76 72,52 92,58 98,32 112,44" fill="#0b0f0a" stroke="#c8d6b9" stroke-width="1.5" opacity="0.55"/>
+
+  <!-- Outer targeting reticle ring (circuit-board style) -->
+  <circle cx="128" cy="128" r="78" fill="none" stroke="#7cff3a" stroke-width="2" opacity="0.85"/>
+  <circle cx="128" cy="128" r="70" fill="none" stroke="#c8d6b9" stroke-width="1" opacity="0.5" stroke-dasharray="4 6"/>
+
+  <!-- Targeting crosshair ticks -->
+  <polyline points="128,22 128,52" stroke="#7cff3a" stroke-width="3" stroke-linecap="square"/>
+  <polyline points="128,204 128,234" stroke="#7cff3a" stroke-width="3" stroke-linecap="square"/>
+  <polyline points="22,128 52,128" stroke="#7cff3a" stroke-width="3" stroke-linecap="square"/>
+  <polyline points="204,128 234,128" stroke="#7cff3a" stroke-width="3" stroke-linecap="square"/>
+
+  <!-- Diagonal targeting ticks -->
+  <polyline points="54,54 70,70" stroke="#c8d6b9" stroke-width="2"/>
+  <polyline points="202,54 186,70" stroke="#c8d6b9" stroke-width="2"/>
+  <polyline points="54,202 70,186" stroke="#c8d6b9" stroke-width="2"/>
+  <polyline points="202,202 186,186" stroke="#c8d6b9" stroke-width="2"/>
+
+  <!-- Circuit board traces emanating from eye (reptilian camo accent) -->
+  <path d="M80 74 L60 54 L36 54" fill="none" stroke="#7cff3a" stroke-width="2" opacity="0.7"/>
+  <path d="M176 74 L196 54 L220 54" fill="none" stroke="#7cff3a" stroke-width="2" opacity="0.7"/>
+  <path d="M80 182 L60 202 L36 202" fill="none" stroke="#7cff3a" stroke-width="2" opacity="0.7"/>
+  <path d="M176 182 L196 202 L220 202" fill="none" stroke="#7cff3a" stroke-width="2" opacity="0.7"/>
+
+  <!-- Circuit nodes on traces -->
+  <circle cx="36" cy="54" r="3" fill="#ff4d1c"/>
+  <circle cx="220" cy="54" r="3" fill="#ff4d1c"/>
+  <circle cx="36" cy="202" r="3" fill="#ff4d1c"/>
+  <circle cx="220" cy="202" r="3" fill="#ff4d1c"/>
+
+  <!-- Chameleon eye outer socket (organic camo shape) -->
+  <path d="M128 58 C166 58 194 90 194 128 C194 166 166 198 128 198 C90 198 58 166 58 128 C58 90 90 58 128 58 Z" fill="#0b0f0a" stroke="#c8d6b9" stroke-width="2.5"/>
+
+  <!-- Chameleon camo spots/texture inside socket -->
+  <path d="M90 90 Q100 82 110 92 Q104 102 92 100 Z" fill="#c8d6b9" opacity="0.25"/>
+  <path d="M152 160 Q162 152 172 164 Q164 174 152 170 Z" fill="#c8d6b9" opacity="0.25"/>
+  <path d="M148 86 Q158 80 164 92 Q154 98 148 90 Z" fill="#c8d6b9" opacity="0.2"/>
+  <path d="M86 152 Q96 146 102 158 Q92 164 86 156 Z" fill="#c8d6b9" opacity="0.2"/>
+
+  <!-- Eye split iris: left half (reptilian slit) -->
+  <path d="M128 78 C104 78 88 100 88 128 C88 156 104 178 128 178 L128 78 Z" fill="#7cff3a" opacity="0.9"/>
+
+  <!-- Eye split iris: right half (circuit pattern) -->
+  <path d="M128 78 C152 78 168 100 168 128 C168 156 152 178 128 178 L128 78 Z" fill="#0b0f0a" stroke="#7cff3a" stroke-width="2"/>
+
+  <!-- Circuit traces in right iris half -->
+  <path d="M128 92 L148 92 L148 108 L160 108" fill="none" stroke="#7cff3a" stroke-width="1.5"/>
+  <path d="M128 112 L154 112 L154 128 L160 128" fill="none" stroke="#7cff3a" stroke-width="1.5"/>
+  <path d="M128 132 L148 132 L148 148 L156 148" fill="none" stroke="#7cff3a" stroke-width="1.5"/>
+  <path d="M128 152 L144 152 L144 164" fill="none" stroke="#7cff3a" stroke-width="1.5"/>
+
+  <!-- Circuit nodes in right iris -->
+  <circle cx="160" cy="108" r="2.5" fill="#ff4d1c"/>
+  <circle cx="160" cy="128" r="2.5" fill="#ff4d1c"/>
+  <circle cx="156" cy="148" r="2.5" fill="#ff4d1c"/>
+  <circle cx="144" cy="164" r="2.5" fill="#ff4d1c"/>
+
+  <!-- Reptilian slit pupil across the entire eye (vertical) -->
+  <path d="M124 84 L132 84 L130 128 L132 172 L124 172 L126 128 Z" fill="#ff4d1c"/>
+
+  <!-- Pupil highlight slit -->
+  <path d="M127 96 L129 96 L128.5 108 L127.5 108 Z" fill="#c8d6b9" opacity="0.8"/>
+
+  <!-- Central targeting dot -->
+  <circle cx="128" cy="128" r="4" fill="#ff4d1c" stroke="#0b0f0a" stroke-width="1"/>
+
+  <!-- Brow ridge (reptilian) -->
+  <path d="M80 82 Q104 66 128 66 Q152 66 176 82" fill="none" stroke="#c8d6b9" stroke-width="2.5"/>
+
+  <!-- Cheek scales -->
+  <path d="M72 140 Q66 148 72 156" fill="none" stroke="#c8d6b9" stroke-width="1.5" opacity="0.6"/>
+  <path d="M184 140 Q190 148 184 156" fill="none" stroke="#c8d6b9" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Small wordmark -->
+  <text x="128" y="238" font-family="monospace" font-size="9" fill="#c8d6b9" text-anchor="middle" letter-spacing="2" opacity="0.6">MECCHA.CHAMELEON</text>
+</svg>
